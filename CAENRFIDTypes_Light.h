@@ -195,7 +195,7 @@ typedef enum {
 */
 typedef enum {
     RESERVED   = 0,
-    EPC        = 1,
+    EPC_CAEN        = 1,
     TID        = 2,
     USER       = 3
 } CAENRFIDMemBanks;
