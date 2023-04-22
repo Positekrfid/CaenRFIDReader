@@ -49,9 +49,9 @@
         Description:
         The function opens a connection to an attached device.
  */
-//CAENRFIDErrorCodes CAENRFID_Connect(CAENRFIDReader* reader,
-//                                    CAENRFIDPort PortType,
-//                                    void* PortParams);
+CAENRFIDErrorCodes CAENRFID_Connect(CAENRFIDReader* reader,
+                                    CAENRFIDPort PortType,
+                                    void* PortParams);
 
 /*
     CAENRFID_Disconnect
