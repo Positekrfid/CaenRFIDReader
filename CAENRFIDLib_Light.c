@@ -38,13 +38,16 @@
 
 static uint16_t _cmdID = 0;
 
-CAENRFIDErrorCodes CAENRFID_Connect(CAENRFIDReader* reader,
-                                    CAENRFIDPort PortType,
-                                    void* PortParams)
-{
-    if(reader->connect(&reader->_port_handle, (int16_t) PortType, PortParams) != 0) return CAENRFID_PortError;
-    return CAENRFID_StatusOK;
-}
+//CAENRFIDErrorCodes CAENRFID_Connect(CAENRFIDReader* reader,
+//                                    CAENRFIDPort PortType,
+//                                    void* PortParams)
+//CAENRFIDErrorCodes CAENRFID_Connect(const char *port_name, uint32_t baud_rate)
+//{
+//    //if(reader->connect(&reader->_port_handle, (int16_t) PortType, PortParams) != 0) return CAENRFID_PortError;
+//    if(reader->connect(&reader->port_name, (uint32_t) baud_rate) != 0) return CAENRFID_PortError;
+//   
+//    return CAENRFID_StatusOK;
+//}
 
 CAENRFIDErrorCodes CAENRFID_Disconnect(CAENRFIDReader* reader)
 {
