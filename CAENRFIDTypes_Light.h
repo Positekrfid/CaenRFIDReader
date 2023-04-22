@@ -362,8 +362,7 @@ typedef struct CAENRFIDReader_s {
        (0) : Success
       (-1) : Failure
     */
-    //int16_t (*connect)(void* *port_handle, int16_t port_type, void* port_params);
-      int16_t (*connect)(uint32_t baud_rate);
+    int16_t (*connect)(void* *port_handle, int16_t port_type, void* port_params);
  
 
     /*
